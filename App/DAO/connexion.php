@@ -3,7 +3,7 @@
  function getConnexion() {
      // --- Configuration de la base de données ---
      $host     = 'localhost';
-     $dbname   = 'banque';
+     $dbname   = 'gestion_banque';
      $username = 'root';
      $password = '';
      $charset  = 'utf8mb4';
