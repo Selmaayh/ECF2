@@ -30,7 +30,7 @@
                         <a href="?id_compte=<?= $compte['id_compte'] ?>&action=modifier&page=listCompte" class="btn btn-warning btn-sm">Modifier</a>
                         <a href="?id_compte=<?= $compte['id_compte'] ?>&action=supprimer&page=listCompte" 
                            class="btn btn-danger btn-sm"
-                           onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette tâche ?')">
+                           onclick="return confirm('Êtes-vous sûr de vouloir supprimer  ?')">
                             Supprimer
                         </a>
                     </td>

@@ -37,18 +37,18 @@
      public function deleteFromClient($id) 
      {
          $this->client->deleteClient($id);
-         header('Location: /ecf-banque/');
+         header('Location: /ECF2/');
      }
      public function createClient(string $nom, string $prenom, string $email, string $tel, string $adresse)
      {
          $this->client->createClient($nom, $prenom, $email, $tel, $adresse );
-         header('Location: /ecf-banque/');
+         header('Location: /ECF2/');
      }
      
  
      public function updateFromClient(string $id, string $nom, string $prenom, string $email, string $telephone , string $adresse) 
      {
          $this->client->updateClient($id, $nom, $prenom, $email,$telephone,$adresse);
-         header('Location: /ecf-banque/');
+         header('Location: /ECF2/');
      }
  }

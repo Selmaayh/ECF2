@@ -9,23 +9,23 @@
  <body>
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
          <div class="container">
-             <a class="navbar-brand" href="?">📋 Gestion de la banque</a>
+             <a class="navbar-brand" href="?"> Gestion de banque</a>
              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                  <span class="navbar-toggler-icon"></span>
              </button>
              <div class="collapse navbar-collapse" id="navbarNav">
                  <ul class="navbar-nav ms-auto">
                      <li class="nav-item">
-                         <a class="nav-link" href="?">🏠 Accueil</a>
+                         <a class="nav-link" href="?"> Accueil</a>
                      </li>
                      <li class="nav-item">
-                         <a class="nav-link" href="?cree=nouveau-client">➕ Nouvelle client</a>
+                         <a class="nav-link" href="?cree=nouveau-client">  client</a>
                      </li>
                      <li class="nav-item">
-                         <a class="nav-link" href="?cree=nouveau-compte">➕ Nouvelle compte</a>
+                         <a class="nav-link" href="?cree=nouveau-compte"> compte</a>
                      </li>
                      <li class="nav-item">
-                         <a class="nav-link" href="?cree=nouveau-contrat">➕ Nouvelle contrat</a>
+                         <a class="nav-link" href="?cree=nouveau-contrat"> contrat</a>
                      </li>
                  </ul>
              </div>
