@@ -19,11 +19,11 @@ class Contrat
     }
     public function createContrat(string $type_contrat, string $montant, string $duree,$id_client)
     {
-        $stmt = $this->pdo->prepare("INSERT INTO CONTRAT (type_contrat,montant_souscrit, duree_mois,id_client) VALUES (:type_contrat,:montant, :duree,:id_client)");
-        $stmt->bindParam(':type_contrat', $type_contrat);
-        $stmt->bindParam(':montant', $montant);
+        $stmt = $this->pdo->prepare("INSERT INTO contrat (type_de_contrat,montant_souscrit, duree_mois,Id_client) VALUES (:type_contrat,:montant, :duree,:id_client)");
+        $stmt->bindParam(':type_de_contrat', $type_contrat);
+        $stmt->bindParam(':montant_souscrit', $montant);
         $stmt->bindParam(':duree', $duree);
-        $stmt->bindParam(':id_client', $id_client);
+        $stmt->bindParam(':Id_client', $id_client);
         
         return $stmt->execute();
     }

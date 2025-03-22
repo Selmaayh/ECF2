@@ -20,10 +20,10 @@ class Compte
     }
     public function createCompte(string $RIB, string $type, string $solde,$id_client)
     {
-        $stmt = $this->pdo->prepare("INSERT INTO compte (RIB,Type_compte,Solde_initial,Id_client) VALUES (:RIB, :type_compte, :solde,:id_client)");
+        $stmt = $this->pdo->prepare("INSERT INTO compte (RIB, Type_de_compte, Solde_initial, Id_client) VALUES (:RIB, :Type_de_compte, :Solde_initial, :Id_client)");
         $stmt->bindParam(':RIB', $RIB);
         $stmt->bindParam(':Type_de_compte', $type);
-        $stmt->bindParam(':solde_initial', $solde);
+        $stmt->bindParam(':Solde_initial', $solde);
         $stmt->bindParam(':Id_client', $id_client);
         
         return $stmt->execute();
