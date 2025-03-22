@@ -8,10 +8,10 @@ require_once __DIR__ . '/app/controllers/AdminController.php';
 $clientController = new ClientController();
 $compteController = new CompteController();
 $contratController = new ContratController();
-$adminController = new AdminController();
-if (!isset($_SESSION['username'])) {
-    $adminController->index();
-}
+// $adminController = new AdminController();
+// if (!isset($_SESSION['username'])) {
+//     $adminController->index();
+// }
 if (isset($_GET['action']) && $_GET['action'] == 'createClient' && isset($_POST['nom']) && !empty($_POST['nom']) && isset($_POST['prenom']) && !empty($_POST['prenom']) && isset($_POST['email']) && !empty($_POST['email'])&& isset($_POST['tel']) && !empty($_POST['tel'])&& isset($_POST['adresse']) && !empty($_POST['adresse']) ) {
     $clientController->createClient($_POST['nom'], $_POST['prenom'], $_POST['email'],$_POST['tel'],$_POST['adresse']);
 

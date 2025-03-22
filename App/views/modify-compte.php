@@ -10,18 +10,18 @@
             </div>
             <label for="status" class="form-label">type de Compte :</label>
                 <select class="form-control" name="type">
-                    <option value="courant" <?= $compte['type_compte'] === 'courant' ? 'selected' : '' ?>>courant</option>
-                    <option value="epargne" <?= $compte['type_compte'] === 'epargne' ? 'selected' : '' ?>>epargne</option>
+                    <option value="courant" <?= $compte['Type_de_compte'] === 'courant' ? 'selected' : '' ?>>courant</option>
+                    <option value="epargne" <?= $compte['Type_de_compte'] === 'epargne' ? 'selected' : '' ?>>epargne</option>
                 </select>
             <div class="mb-3">
                 <label for="title" class="form-label">solde :</label>
-                <input type="text" class="form-control" name="solde" value="<?= htmlspecialchars($compte['solde']) ?>" required>
+                <input type="text" class="form-control" name="solde" value="<?= htmlspecialchars($compte['Solde_initial']) ?>" required>
             </div>
             <div class="mb-3">
-            <label for="id_client" > client :</label>
-            <select name="id_client" required>
+            <label for="Id_client" > client :</label>
+            <select name="Id_client" required>
             <?php foreach ($clients as $client) {  ?>
-            <option value="<?= $client['id_client'] ?>"><?= $client['nom'] . ' ' . $client['prenom'] ?></option>
+            <option value="<?= $client['Id_client'] ?>"><?= $client['nom'] . ' ' . $client['prenom'] ?></option>
             <?php  } ?>
         </select>
             </div>

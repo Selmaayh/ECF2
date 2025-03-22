@@ -18,16 +18,16 @@
          <tbody>
              <?php foreach ($clients as $client): ?>
                  <tr>
-                     <td><?= htmlspecialchars($client['id_client']) ?></td>
-                     <td><?= htmlspecialchars($client['nom']) ?></td>
-                     <td><?= htmlspecialchars($client['prenom']) ?></td>
-                     <td><?= htmlspecialchars($client['email']) ?></td>
-                     <td><?= htmlspecialchars($client['telephone']) ?></td>
+                     <td><?= htmlspecialchars($client['Id_client']) ?></td>
+                     <td><?= htmlspecialchars($client['Nom_client']) ?></td>
+                     <td><?= htmlspecialchars($client['Prenom']) ?></td>
+                     <td><?= htmlspecialchars($client['Email']) ?></td>
+                     <td><?= htmlspecialchars($client['N__de_telephone']) ?></td>
                      <td><?= htmlspecialchars($client['adresse']) ?></td>
                      <td>
-                         <a href="?id_client=<?= $client['id_client'] ?>&action=voir&page=listClient" class="btn btn-info btn-sm">Voir</a>
-                         <a href="?id_client=<?= $client['id_client'] ?>&action=modifier&page=listClient" class="btn btn-warning btn-sm">Modifier</a>
-                         <a href="?id_client=<?= $client['id_client'] ?>&action=supprimer&page=listClient" 
+                         <a href="?id_client=<?= $client['Id_client'] ?>&action=voir&page=listClient" class="btn btn-info btn-sm">Voir</a>
+                         <a href="?id_client=<?= $client['Id_client'] ?>&action=modifier&page=listClient" class="btn btn-warning btn-sm">Modifier</a>
+                         <a href="?id_client=<?= $client['Id_client'] ?>&action=supprimer&page=listClient" 
                             class="btn btn-danger btn-sm"
                             onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette tâche ?')">
                              Supprimer

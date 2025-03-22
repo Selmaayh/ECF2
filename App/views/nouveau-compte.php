@@ -12,7 +12,7 @@
     <label for="id_client" class="form-label" > client :</label>
         <select name="id_client" class="form-select" required>
         <?php foreach ($clients as $client) {  ?>
-            <option value="<?= $client['id_client'] ?>"><?= $client['nom'] . ' ' . $client['prenom'] ?></option>
+            <option value="<?= $client['Id_client'] ?>"><?= $client['Nom_client'] . ' ' . $client['Prenom'] ?></option>
             <?php  } ?>
         </select>
         </div>
