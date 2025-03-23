@@ -16,5 +16,6 @@
 
 ####  MVC 
 architequeture model vue controleur et DAO pour connexion 
+difuculté a mettre le hash 
 
 
